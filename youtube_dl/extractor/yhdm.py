@@ -6,7 +6,7 @@ from .common import InfoExtractor
 
 class YhdmIE(InfoExtractor):
     # https://docs.python.org/3/library/re.html#re.MatchObject.groupdict
-    _VALID_URL = r'https?://(?:www\.)?yhdm\.so/v/(?P<id>[0-9\-]+)'
+    _VALID_URL = r'https?://(?:www\.)?yhdm\.so/v/(?P<id>[0-9a-zA-Z\-]+)'
     _TEST = {
         'url': 'http://www.yhdm.so/v/5259-1.html',
         'md5': 'TODO: md5 sum of the first 10241 bytes of the video file (use --test)',
